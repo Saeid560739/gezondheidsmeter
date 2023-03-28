@@ -1,4 +1,7 @@
 <?php $this->view('inclodes/header')?>
 
-        <h1>bbbb</h1>
+        <?php
+                echo "<pre>";
+                print_r ($rows);
+        ?>
 <?php $this->view('inclodes/footer')?>

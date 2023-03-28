@@ -1,8 +1,13 @@
 <?php
 class dashboard extends Controller 
 {
-    public function index($id = null)
+     function index()
         {
-            $this->view('dashboard');
+            
+            $db = new Database();
+            $data = $db->query('select * from users');
+            $this->view('dashboard', ['rows'=>$data]);
+
+
         }
 }
