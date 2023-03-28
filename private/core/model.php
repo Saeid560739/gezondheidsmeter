@@ -8,11 +8,15 @@ class Model extends Database
     }
     public function where($column, $value)
     {
-        $query = "select * from users where :colomn = :value";
+        $query = "select * from users where $column = :value";
         return $this->query($query, [
-            'colomn' => $column,
             'value' => $value
         ]);
+    }
+    public function findAll()
+    {
+        $query = "select * from users";
+        return $this->query($query);
     }
 
     

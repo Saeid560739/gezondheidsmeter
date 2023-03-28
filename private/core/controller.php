@@ -14,4 +14,12 @@ class Controller
                 return require("../private/views/404.view.php");
             }
         }
+    public function load_model($model)
+    {
+        if(file_exists("../private/model/".$model.".php"))
+        {
+            require("../private/model/".$model.".php");
+            return $model = new $model();
+        }
+    }
 }

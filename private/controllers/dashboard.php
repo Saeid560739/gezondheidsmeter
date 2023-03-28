@@ -3,11 +3,9 @@ class dashboard extends Controller
 {
      function index()
         {
-            
-            $db = new Database();
-            $data = $db->query('select * from users');
+ 
+            $user = $this->load_model('user');
+            $data = $user->findAll();
             $this->view('dashboard', ['rows'=>$data]);
-
-
         }
 }
