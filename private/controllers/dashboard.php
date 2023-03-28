@@ -4,7 +4,7 @@ class dashboard extends Controller
      function index()
         {
  
-            $user = $this->load_model('user');
+            $user = new User();
             $data = $user->findAll();
             $this->view('dashboard', ['rows'=>$data]);
         }
