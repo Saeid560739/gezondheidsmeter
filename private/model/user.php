@@ -39,7 +39,7 @@ class User extends Model
         $data['firstname'] = $DATA['voornaam'];
         $data['lastname'] = $DATA['achternaam'];
         $data['email'] = $DATA['email'];
-        $data['password'] = $DATA['password'];
+        $data['password'] = password_hash($DATA['password'], PASSWORD_DEFAULT) ;
         $data['birth'] = $DATA['geboortedatum'];
         $data['weight'] = $DATA['gewicht'];
         $this->addObject($data);
