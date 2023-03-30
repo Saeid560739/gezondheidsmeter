@@ -5,7 +5,7 @@ class Model extends Database
     public $errors = array();
     function __construct()
     {
-        echo $this::class;
+        //echo $this::class;
         if(!property_exists($this, 'table'))
         {
             $this->table = strtolower( $this::class) . "s";
@@ -46,7 +46,7 @@ class Model extends Database
         $str = trim($str,",");
         $data['id'] = $id;
         $query = "UPDATE $this->table SET $str WHERE id = :id"; 
-        echo $query;    
+        //echo $query;    
         return $this->query($query,$data);   
     }
 
