@@ -1,10 +1,10 @@
 <?php
 
-class Profile extends Controller
+class Rapport extends Controller
 {
 
    public function index($id = null)
         {
-            $this->view('profile');
+            $this->view('rapport');
         }
 }
