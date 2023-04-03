@@ -2,12 +2,15 @@ body {
     margin: 0;
   }
   #content_container{
-    background-color: #D9D9D9;
+    background-color: rgba(255,255,255,0.9);
     margin-left:25%;
     padding:1px 16px;
     height: auto;
-    min-height: 825px;
+    min-height: 100vh;
+    background-image: url("../foto's/nature-background-silhouette-green.png");
+    background-size: cover;
   }
+
   /*navbaar style*/
   ul {
     list-style-type: none;

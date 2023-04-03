@@ -17,11 +17,12 @@
                 </ul>
         </div>
         <div id="content_container">
-        <h1>this is dashboard</h1>
-                <?php
-                        echo "<pre>";
-                        print_r ($rows);
-                ?>
+            <h1>this is dashboard</h1>
+            <?php
+            echo "<pre>";
+            print_r ($rows);
+            ?>
         </div>
+
 </div>        
 <?php $this->view('inclodes/footer')?>

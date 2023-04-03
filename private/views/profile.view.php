@@ -1,4 +1,4 @@
-<?php $this->view('inclodes/header')?>
+    <?php $this->view('inclodes/header')?>
 
 <div id="content">
         <div id="menu_container">

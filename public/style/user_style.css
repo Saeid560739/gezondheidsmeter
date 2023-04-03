@@ -7,7 +7,9 @@ h1 {
 /* BASIC */
 
 html {
+  background-image: url("../foto's/nature-background-silhouette-4.png");
   background-color: #A9D18E;
+  background-size: cover;
 }
 
 body {

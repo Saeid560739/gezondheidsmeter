@@ -11,7 +11,6 @@
         <link rel="stylesheet" type="text/css" href="http://localhost/gezondheidsmeter/public/style/user_style.css">
     </head>
     <body>
-
       <div class="wrapper fadeInDown">
         <div id="formContent">
           <!-- Tabs Titles -->
