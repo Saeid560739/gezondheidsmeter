@@ -1,5 +1,4 @@
 <?php $this->view('inclodes/header')?>
-
 <div id="content">
         <div id="menu_container">
                 
@@ -18,20 +17,23 @@
         </div>
         <div id="content_container">
                 <div id="title"> 
-                        <h1>Mijn gegevens</h1>
+                        <h1>Mijn gegevens wijzegen</h1>
                 </div>
-                <div id="gegevens">
-                        <div class="gegevens">Usern ID: <?=$rows[0]->id?></div>
-                        <div class="gegevens">Voornaam: <?=$rows[0]->firstname?></div>
-                        <div class="gegevens">Achternaam: <?=$rows[0]->lastname?></div>
-                        <div class="gegevens">E-mail: <?=$rows[0]->email?></div>
-                        <div class="gegevens">Geboortedatum: <?=$rows[0]->birth?></div>
-                        <div class="gegevens">Gewicht: <?=$rows[0]->weight?></div>
-
-                </div>
-                <div id="profile_btn">
-                        <a class="succes_btn" href="http://localhost/gezondheidsmeter/public/userEdit"> Gegevens wijzegen</a>
-                </div>
+                <form method="post">
+                    <div class="gegevens" >
+                        Voornaam: <input type="text" class="test_input" name="firstName" style="margin-left: 40px" value="<?=$rows[0]->firstname?>">
+                    </div>
+                    <div class="gegevens">
+                        Achternaam: <input type="text" class="test_input" name="lastName" style="margin-left: 14px" value="<?=$rows[0]->lastname?>">
+                    </div>
+                    <div class="gegevens">
+                        E-mail: <input type="text" class="test_input" name="email" style="margin-left: 88px" value="<?=$rows[0]->email?>">
+                    </div>
+                    <div class="gegevens">
+                        Gewicht: <input type="text" class="test_input" name="weight" style="margin-left: 68px" value="<?=$rows[0]->weight?>">
+                    </div>
+                    <input type="submit" class="succes_btn" name="submit" value="Opslaan" style="margin: 20px  ">
+                </form>
        
         </div>
 </div> 
