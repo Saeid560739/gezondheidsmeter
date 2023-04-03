@@ -10,7 +10,7 @@ class dashboard extends Controller
             $user = new User();
             
 
-            $data = $user->findAll();
+            $data = $user->where("id", $_SESSION['userID']);
             $this->view('dashboard', ['rows'=>$data]);
         }
 }

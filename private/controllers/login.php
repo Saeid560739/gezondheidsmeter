@@ -15,6 +15,7 @@
                     if(password_verify($_POST['password'], $row->password))
                     {
                         Auth::authen($row);
+                        $_SESSION['userID'] = $row->id;
                         $this->redirect("/dashboard");
                     }
                    

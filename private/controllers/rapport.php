@@ -3,8 +3,17 @@
 class Rapport extends Controller
 {
 
-   public function index($id = null)
+   public function index()
         {
-            $this->view('rapport');
+            if(!Auth::logged_in())
+            {
+                $this->redirect("login");
+            }
+            $user = new User();
+            
+
+            $data = $user->where("id", $_SESSION['userID']);
+            $this->view('rapport', ['rows'=>$data]);
+
         }
 }

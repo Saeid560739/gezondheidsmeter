@@ -1,3 +1,4 @@
+
 <?php $this->view('inclodes/header')?>
 <div id="content">
         <div id="menu_container">
@@ -5,7 +6,7 @@
                 <ul>
                         <div id="foto_container">
                                 <div id="foto"></div>
-                                <div id="naam">asaeelk</div>
+                                <div id="naam"><?=$rows[0]->firstname. " " . $rows[0]->lastname?></div>
                         </div>
                         <li><a class="active" href="http://localhost/gezondheidsmeter/public/dashboard">Home</a></li>
                         <li><a href="http://localhost/gezondheidsmeter/public/profile">Mijn gegevens</a></li>

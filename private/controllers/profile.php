@@ -3,8 +3,18 @@
 class Profile extends Controller
 {
 
-   public function index($id = null)
+   public function index()
         {
-            $this->view('profile');
+            if(!Auth::logged_in())
+            {
+                $this->redirect("login");
+            }
+            $user = new User();
+            
+
+            $data = $user->where("id", $_SESSION['userID']);
+            $this->view('profile', ['rows'=>$data]);
+            
+            
         }
 }
