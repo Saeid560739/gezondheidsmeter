@@ -79,13 +79,16 @@ body {
 #title{
   color: #2eb82e;
   font-size: 30px;
+  font-family: arial, serif;
 }
 .gegevens{
   padding: 20px;
   font-size: 30px;
   font-weight: bold;
   color: #494956;
+  font-family: arial, serif;
 }
+
 .succes_btn{
   text-decoration: none;
   width: fit-content;
@@ -95,6 +98,7 @@ body {
   padding: 10px;
   color: white;
   font-size: 25px;
+  font-family: arial, serif;
 }
 #profile_btn{
   margin-left: 25px;
