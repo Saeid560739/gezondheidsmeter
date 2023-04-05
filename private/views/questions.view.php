@@ -16,10 +16,9 @@
         </ul>
         </div>
         <div id="content_container">
-                <div id="title"> 
-                        <h1>Vrage<?php echo $_GET['v']?></h1>
-                </div>
+                
                 <?php
+                print_r($_POST);
 
                     if(isset($_GET['v']))
                     {
