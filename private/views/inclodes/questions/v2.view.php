@@ -10,18 +10,18 @@
 
 
     <div id="sportVragen" style="display: none">
-    <h2>Hoeveel uren?</h2>
-    <input type="text" id="uren" name="sport" value="1"> uren
+        <h2>Hoeveel uren?</h2>
+        <input type="text" id="uren" name="sport" > uren
 
-    <h2>Welke sport?</h2>
-    <input type="checkbox" id="veotbal" name="vehicle1" value="Bike">
-    <label for="voetbal"> Voetbal</label><br>
-    <input type="checkbox" id="tennis" name="vehicle2" value="Car">
-    <label for="tennis"> Tennis</label><br>
-    <input type="checkbox" id="zwemmen" name="vehicle3" value="Boat">
-    <label for="zwemmen"> Zwemmen</label><br>
-    <input type="checkbox" id="anders" name="vehicle4" value="Boat">
-    <label for="anders"> Anders</label><br>
+        <h2>Welke sport?</h2>
+        <input type="checkbox" id="veotbal" name="vehicle1" value="1">
+        <label for="voetbal"> Voetbal</label><br>
+        <input type="checkbox" id="tennis" name="vehicle2" value="1">
+        <label for="tennis"> Tennis</label><br>
+        <input type="checkbox" id="zwemmen" name="vehicle3" value="1">
+        <label for="zwemmen"> Zwemmen</label><br>
+        <input type="checkbox" id="anders" name="vehicle4" value="1">
+        <label for="anders"> Anders</label><br>
     </div>
 
 
