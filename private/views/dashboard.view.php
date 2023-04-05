@@ -18,6 +18,10 @@
         </div>
         <div id="content_container">
             <h1>this is dashboard</h1>
+            <form action="http://localhost/gezondheidsmeter/public/questions?v=1" method="post">
+            
+                <input type="submit" name="submit">vragen</a>
+            </form>
             <?php
             echo "<pre>";
             print_r ($rows);

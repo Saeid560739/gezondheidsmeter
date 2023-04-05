@@ -1,6 +1,6 @@
 <?php
 
-class Rapport extends Controller
+class questions extends Controller
 {
 
    public function index()
@@ -11,9 +11,10 @@ class Rapport extends Controller
             }
             $user = new User();
             
-            
-            $data = $user->where("id", $_SESSION['userID']);
-            $this->view('rapport', ['rows'=>$data]);
 
+            $data = $user->where("id", $_SESSION['userID']);
+            $this->view('questions', ['rows'=>$data]);
+            
+            
         }
 }

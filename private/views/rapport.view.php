@@ -23,17 +23,36 @@
                         <div id="last_report">
                                 <h3>Laatste rapport</h3>
                                 <div id="last_report_div">
-                                <div id="imgNum"><div id="arrow" style="transform: rotate(90deg);"></div><div id="proc">Werk</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
-                                <div id="imgNum"><div id="arrow" style="transform: rotate(90deg);"></div><div id="proc">Sport</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
-                                <div id="imgNum"><div id="arrow" style="transform: rotate(90deg);"></div><div id="proc">Voeding</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
-                                <div id="imgNum"><div id="arrow" style="transform: rotate(90deg);"></div><div id="proc">Alcohol</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
-                                <div id="imgNum"><div id="arrow" style="transform: rotate(90deg);"></div><div id="proc">Drugs</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
-                                <div id="imgNum"><div id="arrow" style="transform: rotate(90deg);"></div><div id="proc">Slaap</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
-                                <div id="imgNum"><div id="arrow" style="transform: rotate(90deg);"></div><div id="proc">Algemeen</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Werk</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Sport</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Voeding</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Alcohol</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Drugs</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Slaap</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Algemeen</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
 
                                 
                         </div>
                         <div id="algemeen_report"></div>
+                        
+                </div>
+                <br>
+                <br>
+                <div id="rapport">
+                        <div id="last_report">
+                                <h3>Algemeen rapport</h3>
+                                <div id="last_report_div">
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Werk</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Sport</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Voeding</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Alcohol</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Drugs</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Slaap</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+                                <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc('6')?>deg);"></div><div id="proc">Algemeen</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
+
+                                
+                        </div>
+                        
                         
                 </div>
      
