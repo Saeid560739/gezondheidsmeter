@@ -18,6 +18,9 @@
         </div>
         <div id="content_container">
             <h1>this is dashboard</h1>
+            <?php
+            print_r($_SESSION);
+                ?>
             <form action="http://localhost/gezondheidsmeter/public/questions?v=1" method="post">
             
                 <input type="submit" name="submit">vragen</a>

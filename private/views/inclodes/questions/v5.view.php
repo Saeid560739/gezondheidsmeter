@@ -1,6 +1,13 @@
 <div id="title"> 
         <h1>Drugs</h1>
 </div>
+<?php
+    if(isset($_POST["submit"]))
+            {                          
+                   $alcohol = isset($_POST['alcohol'])? $_POST['alcohol']: 0;
+                   $_SESSION['alcohol'] = (int)$alcohol;
+            }
+?>
 <form method="post" id="vragen_content" action="http://localhost/gezondheidsmeter/public/questions?v=6">
     <h2>heb je vandaag (Joints, sigaretten, sigaren) genomen?</h2>
     <input type="radio" id="JointsJa" name="Joints" value="0">

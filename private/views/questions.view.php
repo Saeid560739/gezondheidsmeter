@@ -18,11 +18,12 @@
         <div id="content_container">
                 
                 <?php
-                print_r($_POST);
-
+                //echo 3*2.5;
+                print_r($_SESSION);
+                
                     if(isset($_GET['v']))
                     {
-                        
+                        //$_SESSION['werk'] = '';
                         if(isset($_POST["submit_finish"]))
                         {
                             
@@ -31,7 +32,9 @@
                         
                       elseif(isset($_POST["submit"])){
                         
+                        $_GET['v'] +1;
                         $this->view('inclodes/questions/v'. $_GET['v']);
+
                       }else{
                         $this->redirect("dashboard");
                       }

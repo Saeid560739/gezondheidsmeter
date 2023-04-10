@@ -1,6 +1,7 @@
 <div id="title"> 
         <h1>De arbeidsomstandigheden</h1>
 </div>
+
 <form method="post" id="vragen_content" action="http://localhost/gezondheidsmeter/public/questions?v=2">
     <h2>had je vandaag een gezonde werkplek (instelbare stoel, tafel, afwisseling van werkhouding, kwaliteit beeldscherm)?</h2>
     <input type="radio" id="ja1" name="werkplek" value="1">
