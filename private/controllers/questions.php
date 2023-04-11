@@ -10,8 +10,6 @@ class questions extends Controller
                 $this->redirect("login");
             }
             $user = new User();
-            
-
             $data = $user->where("id", $_SESSION['userID']);
             $this->view('questions', ['rows'=>$data]);
             

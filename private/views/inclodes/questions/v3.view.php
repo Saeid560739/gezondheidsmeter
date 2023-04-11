@@ -10,7 +10,7 @@
                    $tennis = isset($_POST['tennis'])? $_POST['tennis']: 0;
                    $zwemmen = isset($_POST['zwemmen'])? $_POST['zwemmen']: 0;
                    $anders = isset($_POST['anders'])? $_POST['anders']: 0;
-                   $totale = ((int)$sport * (int)$uren)<= 10? ((int)$sport * (int)$uren): 6;
+                   $totale = (2.5 * (int)$uren)<= 10? (2.5 * (int)$uren): 6;
                    $_SESSION['sport'] = $totale;
             }
 ?>

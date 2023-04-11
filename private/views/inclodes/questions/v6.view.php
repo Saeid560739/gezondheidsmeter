@@ -7,7 +7,7 @@
                    $Joints = isset($_POST['Joints'])? $_POST['Joints']: 0;
                    $Extacy = isset($_POST['Extacy'])? $_POST['Extacy']: 0;
                    $GHB = isset($_POST['GHB'])? $_POST['GHB']: 0;
-                   $totale = ((int)$Joints  + (int)$Extacy + (int)$GHB )* 3;
+                   $totale = ((int)$Joints  + (int)$Extacy + (int)$GHB )* 3.33;
                    $_SESSION['drugs'] = $totale;
             }
 ?>

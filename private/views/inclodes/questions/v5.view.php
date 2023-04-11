@@ -5,7 +5,7 @@
     if(isset($_POST["submit"]))
             {                          
                    $alcohol = isset($_POST['alcohol'])? $_POST['alcohol']: 0;
-                   $_SESSION['alcohol'] = (int)$alcohol;
+                   $_SESSION['alcohol'] = (int)$alcohol * 10;
             }
 ?>
 <form method="post" id="vragen_content" action="http://localhost/gezondheidsmeter/public/questions?v=6">
