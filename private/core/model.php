@@ -21,6 +21,15 @@ class Model extends Database
             
         ]);
     }
+    public function getLastWeek($row, $column, $value)
+    {
+        $column = addslashes($column);
+        $query = "select SUM($row) AS value_sum from $this->table where $column = :value ORDER BY id DESC LIMIT 7;";
+        return $this->query($query, [
+            'value' => $value,
+            
+        ]);
+    }
     public function findAll()
     {
         $query = "select * from $this->table";
@@ -35,6 +44,11 @@ class Model extends Database
         $values = implode(",:", $keys);
         $query = "INSERT INTO $this->table ( $columns ) VALUES (:$values);";       
         return $this->query($query,$data);   
+    }
+    public function addEmptyObject($userID)
+    {
+        $query = "INSERT INTO `reports` ( work, sport, nutrition, alcohol,drugs, sleep, general, users_id) VALUES ('0', '0', '0', '0', '0', '0', '0', current_timestamp(), $userID);";       
+        return $this->query($query);   
     }
     public function updateObject($id, $data)
     {

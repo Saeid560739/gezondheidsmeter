@@ -20,5 +20,5 @@
     <label for="slaapGoed">Goed<img src="../public/foto's/tevreden.jpeg" style="margin: 47px; width: 200px; height:200px;"></label><br>
     <input type="radio" id="slaapslecht" name="slaap" value="0">
     <label for="slaapslecht">Niet Goed<img src="../public/foto's/ontevreden.jpeg" style=" margin: 20px; width: 200px; height:200px;"></label><br>
-    <input type="submit" name="submit">
+    <input type="submit" class="succes_btn" name="submit" value="Volgende" >
 </form>

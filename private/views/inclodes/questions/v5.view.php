@@ -26,5 +26,5 @@
     <label for="GHBJa">Ja</label><br>
     <input type="radio" id="GHBNee" name="GHB" value="1">
     <label for="GHBNee">Nee</label><br>
-    <input type="submit" name="submit">
+    <input type="submit" class="succes_btn" name="submit" value="Volgende" >
 </form>

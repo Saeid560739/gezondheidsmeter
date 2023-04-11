@@ -32,5 +32,6 @@
     <label for="drinkJa">Ja</label><br>
     <input type="radio" id="drinkNee" name="cafeïnehoudende" value="1">
     <label for="drinkNee">Nee</label><br>
-    <input type="submit" name="submit">
+    <input type="submit" class="succes_btn" name="submit" value="Volgende" >
+
 </form>

@@ -16,4 +16,5 @@ class Report extends Model
 
         $this->addObject($data);
     }
+
 }

@@ -17,5 +17,5 @@
     <label for="alcoholJa">Ja</label><br>
     <input type="radio" id="alcoholNee" name="alcohol" value="1">
     <label for="alcoholNee">Nee</label><br>
-    <input type="submit" name="submit">
+    <input type="submit" class="succes_btn" name="submit" value="Volgende" >
 </form>

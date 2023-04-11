@@ -26,7 +26,7 @@
     <label for="ja3">Te druk</label><br>
     <input type="radio" id="nee3" name="werkdruk" value="1">
     <label for="nee3">Normaal</label><br>
-    <input type="submit" name="submit">
+    <input type="submit" class="succes_btn" name="submit" value="Volgende" >
 </form>
                 
      

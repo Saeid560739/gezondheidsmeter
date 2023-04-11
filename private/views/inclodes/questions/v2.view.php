@@ -36,7 +36,8 @@
     </div>
 
 
-    <input type="submit" name="submit">
+    <input type="submit" class="succes_btn" name="submit" value="Volgende" >
+
 </form>
 <script>
     document.getElementById("sportJa").addEventListener("click", view);

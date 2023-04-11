@@ -1,8 +1,8 @@
 <div id="title"> 
-        <h1>Thanks</h1>
+        <h1>Bedankt</h1>
 </div>
 <?php
-        print_r($_SESSION);
+        //print_r($_SESSION);
         if(isset($_POST["submit"]))
                 {                          
                         $slaapUren = isset($_POST['slaapUren'])? $_POST['slaapUren']: 0;
@@ -17,5 +17,5 @@
 
     <h2>Bedankt, Je hebt alle vragen beantwoorden</h2>
 
-    <input type="submit" name="submit">
+    <input type="submit" class="succes_btn" name="submit" value="Afronden" >
 </form>

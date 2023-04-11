@@ -6,7 +6,7 @@ body {
     margin-left:25%;
     padding:1px 16px;
     height: auto;
-    min-height: 100vh;
+    min-height: 170vh;
     background-image: url("../foto's/nature-background-silhouette-green.png");
     background-size: cover;
   }
@@ -99,6 +99,32 @@ body {
   color: white;
   font-size: 25px;
   font-family: arial, serif;
+  border: none;
+  margin-top: 50px;
+}
+.fixed_btn{
+  text-decoration: none;
+  width: fit-content;
+  display: block;
+  height: auto;
+  background-color: #2eb82e;
+  padding: 33px;
+  color: white;
+  font-size: 25px;
+  font-family: arial, serif;
+  border: none;
+  position: fixed;
+  right: 4%;
+  top: 78%;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.fixed_btn:hover{
+  cursor: pointer;
+  opacity: 1;
+  }
+.succes_btn:hover{
+  cursor: pointer;
 }
 #profile_btn{
   margin-left: 25px;
@@ -124,7 +150,7 @@ font-size: 20px;
 }
 #proc{
   position: relative;
-  left: 101px;
+  left: 62px;
   top: 242px;
   font-size: 30px;
 }

@@ -19,7 +19,7 @@
                 
                 <?php
                 //echo 3*2.5;
-                print_r($_SESSION);
+                //print_r($_SESSION);
                 
                     if(isset($_GET['v']))
                     {
