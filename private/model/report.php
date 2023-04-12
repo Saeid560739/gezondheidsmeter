@@ -16,5 +16,10 @@ class Report extends Model
 
         $this->addObject($data);
     }
+    public function reportReset($id)
+    {
+        $this->reset($id);
+    }
+
 
 }

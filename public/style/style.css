@@ -101,6 +101,7 @@ body {
   font-family: arial, serif;
   border: none;
   margin-top: 50px;
+  margin-left: 17px;
 }
 .fixed_btn{
   text-decoration: none;
@@ -124,6 +125,44 @@ body {
   opacity: 1;
   }
 .succes_btn:hover{
+  cursor: pointer;
+}
+.danger_btn{
+  text-decoration: none;
+  width: fit-content;
+  display: block;
+  height: auto;
+  background-color: #f12d2d;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: arial, serif;
+  border: none;
+  margin: 26px;
+  
+}
+label{
+  font-size: 20px;
+}
+label:hover{
+  cursor: pointer;
+}
+.radio{
+  width: 20px;
+  height: 20px;
+  margin: 7px;
+}
+#uren{
+  margin: 15px;
+  width: 43px;
+  height: 25px;
+  font-size: 20px;
+}
+
+.radio:hover{
+  cursor: pointer;
+}
+.danger_btn:hover{
   cursor: pointer;
 }
 #profile_btn{
@@ -161,3 +200,4 @@ h3{
     margin-bottom: -9px;
 
 }
+

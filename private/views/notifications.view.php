@@ -17,8 +17,9 @@
                 </ul>
         </div>
         <div id="content_container">
-        <h1>this is notifications</h1>
-         
+                <div id="title"> 
+                        <h1>Notifications</h1>
+                </div>         
         </div>
 </div> 
         

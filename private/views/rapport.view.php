@@ -20,6 +20,7 @@
                         <h1>Mijn rapport</h1>
                 </div>
                 <?php //print_r($generalOfWeek[0]->value_sum) ?>
+
                 <div id="rapport">
                         <div id="last_report">`
                                 <?php $date = new DateTime($lastReport == 0 ? date("Y/m/d"): $report[$lastReport-1]->date)?>
@@ -34,7 +35,7 @@
                                 <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc($lastReport == 0 ? '0': $report[$lastReport-1]->general)?>deg);"></div><div id="proc">Algemeen <?=  (int)($lastReport == 0 ? '0': $report[$lastReport-1]->general * 10)?>%</div><img src="../public/foto's/meter.png" width="300" height="250"></div>            
                                 
                         </div>
-                        <div id="algemeen_report"></div>
+                        
                         
                 </div>
                 <br>
@@ -50,7 +51,7 @@
                                 <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc($drugsOfWeek[0]->value_sum/$IsWeekReport)?>deg);"></div><div id="proc">Drugs <?=(int)(($drugsOfWeek[0]->value_sum/$IsWeekReport)*10)?>%</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
                                 <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc($sleepOfWeek[0]->value_sum/$IsWeekReport)?>deg);"></div><div id="proc">Slaap <?=(int)(($sleepOfWeek[0]->value_sum/$IsWeekReport)*10)?>%</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
                                 <div id="imgNum"><div id="arrow" style="transform: rotate(<?=get_proc($generalOfWeek[0]->value_sum/$IsWeekReport)?>deg);"></div><div id="proc">Algemeen <?=(int)(($generalOfWeek[0]->value_sum/$IsWeekReport)*10)?>%</div><img src="../public/foto's/meter.png" width="300" height="250"></div>
-                                <div id="last_report_div">
+                                
 
 
                                 
@@ -58,7 +59,13 @@
                         
                         
                 </div>
+                
+                <form method="post" id="vragen_content">
+                        <input type="submit" class="danger_btn" name="submit" value="Rapport reset" >
+                </form> 
      
         </div>
-</div>        
+        
+</div>       
+
 <?php $this->view('inclodes/footer')?>
