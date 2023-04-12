@@ -28,10 +28,12 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link text-success fs-5 fw-bold" aria-current="page" href="http://localhost/gezondheidsmeter/public/dashboard">Dashboard</a>
-                    <a class="nav-link fs-5" href="http://localhost/gezondheidsmeter/public/profile">Mijn gegevens</a>
+                    <a class="nav-link fs-5" href="http://localhost/gezondheidsmeter/public/profile">Gegevens</a>
                     <a class="nav-link fs-5" href="http://localhost/gezondheidsmeter/public/rapport">Rapport</a>
                     <a class="nav-link fs-5" href="http://localhost/gezondheidsmeter/public/notifications">Meldingen</a>
-
+                    <form class="container-fluid justify-content-start">
+                        <button onclick='location.href="http://localhost/gezondheidsmeter/public/log_out"' class="btn btn-outline-danger me-2"  type="button">Uitloggen</button>
+                    </form>
                 </div>
             </div>
         </div>
