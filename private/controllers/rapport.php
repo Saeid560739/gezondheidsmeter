@@ -9,9 +9,20 @@ class Rapport extends Controller
             {
                 $this->redirect("login");
             }
+            
             $user = new User();
             $report = new Report();
             $data = $user->where("id", $_SESSION['userID']);
+            if(count($_POST) > 0 )
+            {
+                $user = new User();
+                if(isset($_POST['submit']))
+                {
+                    $report->reportReset($_SESSION['userID']);
+                }
+            }
+            //SELECT * FROM atm_db.transfer where DATE(datum) = DATE('"+ DateTime.Now.ToString("yyyy/MM/dd") + "') AND AmountStatus = 0 AND userID = '"+ userID +"'
+            //print_r(date("Y/m/d"));
             $workOfWeek = $report->getLastWeek('work',"users_id", $_SESSION['userID']);
             $sportOfWeek = $report->getLastWeek('sport',"users_id", $_SESSION['userID']);
             $nutritionOfWeek = $report->getLastWeek('nutrition',"users_id", $_SESSION['userID']);

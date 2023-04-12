@@ -63,10 +63,17 @@ class Model extends Database
         //echo $query;    
         return $this->query($query,$data);   
     }
+    
 
     public function deleteObject($id)
     {
         $query = "DELETE FROM $this->table WHERE id = :id"; 
+        $data['id'] = $id;
+        return $this->query($query,$data);  
+    }
+    public function reset($id)
+    {
+        $query = "DELETE FROM $this->table WHERE users_id = :id"; 
         $data['id'] = $id;
         return $this->query($query,$data);  
     }

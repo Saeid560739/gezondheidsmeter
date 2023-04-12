@@ -14,9 +14,9 @@
 ?>
 <form method="post" id="vragen_content" action="http://localhost/gezondheidsmeter/public/questions?v=3">
     <h2>Heb je vandaag gesport?</h2>
-    <input type="radio" id="sportJa" name="sport" value="1">
+    <input class="radio" type="radio" id="sportJa" name="sport" value="1">
     <label for="sportJa">Ja</label><br>
-    <input type="radio" id="sportNee" name="sport" value="0">
+    <input class="radio" type="radio" id="sportNee" name="sport" value="0">
     <label for="sportNee">Nee</label><br>
 
 
@@ -25,13 +25,13 @@
         <input type="text" id="uren" name="uren" > uren
 
         <h2>Welke sport?</h2>
-        <input type="checkbox" id="veotbal" name="voetbal" value="1">
+        <input class="radio" type="checkbox" id="veotbal" name="voetbal" value="1">
         <label for="voetbal"> Voetbal</label><br>
-        <input type="checkbox" id="tennis" name="tennis" value="1">
+        <input class="radio" type="checkbox" id="tennis" name="tennis" value="1">
         <label for="tennis"> Tennis</label><br>
-        <input type="checkbox" id="zwemmen" name="zwemmen" value="1">
+        <input class="radio" type="checkbox" id="zwemmen" name="zwemmen" value="1">
         <label for="zwemmen"> Zwemmen</label><br>
-        <input type="checkbox" id="anders" name="anders" value="1">
+        <input class="radio" type="checkbox" id="anders" name="anders" value="1">
         <label for="anders"> Anders</label><br>
     </div>
 
