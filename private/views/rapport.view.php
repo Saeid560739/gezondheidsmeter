@@ -1,20 +1,24 @@
 <?php $this->view('inclodes/header')?>
 <div id="content">
-        <div id="menu_container">
-                
-        <ul>     
-                <div id="foto_container">
-                        <div id="foto"></div>
-                        <div id="naam"><?=$rows[0]->firstname. " " . $rows[0]->lastname?></div>
-                </div>                                                                                                                                                                                                                                               
-                <li><a href="http://localhost/gezondheidsmeter/public/dashboard">Home</a></li>
-                <li><a href="http://localhost/gezondheidsmeter/public/profile">Mijn gegevens</a></li>
-                <li><a class="active" href="http://localhost/gezondheidsmeter/public/rapport">Rapport</a></li>
-                <li><a href="http://localhost/gezondheidsmeter/public/notifications">Meldingen</a></li>
-                <li><a href="http://localhost/gezondheidsmeter/public/log_out">Uitloggen</a></li>
-                        
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg-white">
+            <a class="navbar-brand fw-bold fs-1 text-success" href="#">
+                Gezondheidsmeter
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link fs-5 " aria-current="page" href="http://localhost/gezondheidsmeter/public/dashboard">Dashboard</a>
+                    <a class="nav-link fs-5" href="http://localhost/gezondheidsmeter/public/profile">Mijn gegevens</a>
+                    <a class="nav-link fs-5 text-success fw-bold" href="http://localhost/gezondheidsmeter/public/rapport">Rapport</a>
+                    <a class="nav-link fs-5" href="http://localhost/gezondheidsmeter/public/notifications">Meldingen</a>
+
+                </div>
+            </div>
         </div>
+    </nav>
         <div id="content_container">
                 <div id="title"> 
                         <h1>Mijn rapport</h1>
