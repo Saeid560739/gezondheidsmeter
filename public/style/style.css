@@ -89,6 +89,9 @@ body {
   font-family: arial, serif;
 }
 
+.container-fluid{
+  background-color:#2eb82e;
+}
 .succes_btn{
   text-decoration: none;
   width: fit-content;
