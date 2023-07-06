@@ -43,7 +43,9 @@ class Model extends Database
         $columns = implode(",", $keys);
         $values = implode(",:", $keys);
         $query = "INSERT INTO $this->table ( $columns ) VALUES (:$values);";       
-        return $this->query($query,$data);   
+        echo $query;
+        return $this->query($query,$data);
+            
     }
     public function addEmptyObject($userID)
     {
